@@ -19,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">SHOP</a>
+            <a class="navbar-brand" href="/">PERENOSKA</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

@@ -5,9 +5,9 @@
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
                 <li role="presentation" class="active"><a href="#">All</a></li>
-                <li role="presentation"><a href="#">Tablets</a></li>
-                <li role="presentation"><a href="#">Phones</a></li>
-                <li role="presentation"><a href="#">Laptops</a></li>
+                {foreach from=$categories_order item=foo}
+                <li role="presentation"><a href="#">{$foo['name']}</li>
+                {/foreach}
             </ul>
         </div>
         <div class="col-md-9">

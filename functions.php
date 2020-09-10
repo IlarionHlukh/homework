@@ -138,6 +138,9 @@ function logoutEndpoint()
 function mainPageEndpoint()
 {
     global $smarty;
+    $categoriesOrder = readFromFile(CATEGORIES_FILE);
+
+    $smarty->assign(categories_order,$categoriesOrder);
 
     $smarty->display('index.tpl');
 }

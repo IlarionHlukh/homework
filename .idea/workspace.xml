@@ -72,7 +72,7 @@
       <workItem from="1599325543587" duration="2211000" />
       <workItem from="1599328119099" duration="21216000" />
       <workItem from="1599410885489" duration="46775000" />
-      <workItem from="1599729214950" duration="1043000" />
+      <workItem from="1599729214950" duration="4155000" />
     </task>
     <servers />
   </component>
@@ -108,9 +108,9 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1599228003727" />
-    <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599643604138">
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599731818088">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.689@0.0.1280.689" timestamp="1599643604138" />
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.689@0.0.1280.689" timestamp="1599731818088" />
   </component>
 </project>
