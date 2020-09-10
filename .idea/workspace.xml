@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="39c24520-ef82-41e5-9868-6871c6a6e709" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../book.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../book.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1h2ea5Eeuzwy0wKm8aE7iDSu6YO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework" />
+      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework\images" />
+      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework\src" />
+      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39c24520-ef82-41e5-9868-6871c6a6e709" name="Default Changelist" comment="" />
+      <created>1599213675372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599213675372</updated>
+      <workItem from="1599213680987" duration="5412000" />
+      <workItem from="1599226014984" duration="4264000" />
+      <workItem from="1599325543587" duration="2211000" />
+      <workItem from="1599328119099" duration="21216000" />
+      <workItem from="1599410885489" duration="46775000" />
+      <workItem from="1599729214950" duration="1043000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="349" y="0" key="#PHP" timestamp="1599223162494">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="349" y="0" key="#PHP/0.0.1280.689@0.0.1280.689" timestamp="1599223162494" />
+    <state x="438" y="135" key="#Web_Browsers" timestamp="1599226761074">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="438" y="135" key="#Web_Browsers/0.0.1280.689@0.0.1280.689" timestamp="1599226761074" />
+    <state x="477" y="269" key="NewPhpFileDialog" timestamp="1599551771230">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="477" y="269" key="NewPhpFileDialog/0.0.1280.689@0.0.1280.689" timestamp="1599551771230" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1599228003727">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1599228003727" />
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599643604138">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.689@0.0.1280.689" timestamp="1599643604138" />
+  </component>
+</project>
