@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-07 15:52:37
+/* Smarty version 3.1.34-dev-7, created on 2020-09-12 16:41:38
   from '/laravel/templates/admin/users.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f56574555b982_85683138',
+  'unifunc' => 'content_5f5cd01284ca23_27061163',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a5d63cb7418ad84353970229dffb4717f377b0f4' => 
     array (
       0 => '/laravel/templates/admin/users.tpl',
-      1 => 1599493955,
+      1 => 1599918096,
       2 => 'file',
     ),
   ),
@@ -20,27 +20,44 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f56574555b982_85683138 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5cd01284ca23_27061163 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15798333865f5657453ab968_83044675', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20185752375f5cd01267d9c1_47273415', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layout.tpl");
 }
 /* {block "body"} */
-class Block_15798333865f5657453ab968_83044675 extends Smarty_Internal_Block
+class Block_20185752375f5cd01267d9c1_47273415 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_15798333865f5657453ab968_83044675',
+    0 => 'Block_20185752375f5cd01267d9c1_47273415',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
+
+
+    <?php if ((isset($_GET['error']))) {?>
+        <div class="alert alert-danger" role="alert"><?php ob_start();
+echo $_GET['error'];
+$_prefixVariable1 = ob_get_clean();
+echo $_prefixVariable1;?>
+</div>
+    <?php }?>
+
+    <?php if ((isset($_GET['message']))) {?>
+        <div class="alert alert-success" role="alert"><?php ob_start();
+echo $_GET['message'];
+$_prefixVariable2 = ob_get_clean();
+echo $_prefixVariable2;?>
+</div>
+    <?php }?>
 
     <table class="table">
         <thead>
@@ -54,44 +71,51 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </thead>
         <tbody>
         <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['site_name']->value, 'foo');
-$_smarty_tpl->tpl_vars['foo']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['foo']->value) {
-$_smarty_tpl->tpl_vars['foo']->do_else = false;
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['users']->value, 'user');
+$_smarty_tpl->tpl_vars['user']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['user']->value) {
+$_smarty_tpl->tpl_vars['user']->do_else = false;
 ?>
-        <tr>
-            <td><?php echo $_smarty_tpl->tpl_vars['foo']->value['id'];?>
+            <tr>
+                <td><?php echo $_smarty_tpl->tpl_vars['user']->value['id'];?>
 </td>
-            <td><?php echo $_smarty_tpl->tpl_vars['foo']->value['email'];?>
+                <td><?php echo $_smarty_tpl->tpl_vars['user']->value['email'];?>
 </td>
-            <td><?php echo $_smarty_tpl->tpl_vars['foo']->value['created_at'];?>
+                <td><?php echo $_smarty_tpl->tpl_vars['user']->value['created_at'];?>
 </td>
-            <td><?php ob_start();
-echo $_smarty_tpl->tpl_vars['foo']->value['is_admin'] === 1;
-$_prefixVariable1 = ob_get_clean();
-if ($_prefixVariable1) {?>
-                    admin
-                <?php } else { ?>
-                    user
-                <?php }?>
-            </td>
-            <td>
-                <?php ob_start();
-echo $_smarty_tpl->tpl_vars['foo']->value['is_admin'] === 1;
-$_prefixVariable2 = ob_get_clean();
-if ($_prefixVariable2) {?>
-                <form action="" method="POST">
-                <button class="btn btn-success" formaction="/?action=makeUser">Make user</button>
-                <button class="btn btn-danger" formaction="/?action=deleteUser">Delete</button>
-                <?php } else { ?>
-                    <button class="btn btn-primary" formaction="/?action=makeAdmin">Make admin</button>
-                    <button class="btn btn-danger" formaction="/?action=deleteAdmin">Delete</button>
-                <?php }?>
-            </td>
-            <?php
+                <td><?php if ($_smarty_tpl->tpl_vars['user']->value['is_admin'] == 1) {?> admin <?php } else { ?> user <?php }?></td>
+                <td>
+                    <?php if ($_smarty_tpl->tpl_vars['user']->value['id'] == $_SESSION['user']['id']) {?>
+                <input type="submit" class="btn btn-info" value="Головний адміністратор">
+                </td>
+                    <?php } elseif ($_smarty_tpl->tpl_vars['user']->value['is_admin'] == 1) {?>
+                        <form action="/?action=adminChangeRole" method="POST">
+                            <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['user']->value['id'];?>
+" name="id">
+                            <input type="hidden" value="0" name="admin">
+                            <input type="submit" class="btn btn-primary" value="Make user">
+                        </form>
+                    <?php } else { ?>
+                        <form action="/?action=adminChangeRole" method="POST">
+                            <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['user']->value['id'];?>
+" name="id">
+                            <input type="hidden" value="1" name="admin">
+                            <input type="submit" class="btn btn-success" value="Make admin">
+                        </form>
+                    <?php }?>
+
+                    <?php if ($_smarty_tpl->tpl_vars['user']->value['id'] == $_SESSION['user']['id']) {?>
+
+                    <?php } else { ?>
+                        <a href="/?action=adminRemoveUser&userid=<?php echo $_smarty_tpl->tpl_vars['user']->value['id'];?>
+" class="btn btn-danger">Delete</a></td>
+                    <?php }?>
+                </td>
+            </tr>
+        <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-        </tr>
+
         </tbody>
     </table>
 <?php

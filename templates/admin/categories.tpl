@@ -25,22 +25,32 @@
     </form>
 
 
-    <table class="table" cellspacing="0" border="1" id="table" class="sortable">
+    <table class="table">
         <thead>
         <tr>
-            <th class="nosort">ID</th>
+            <th>ID</th>
             <th>Name</th>
             <th>Order</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         </thead>
         <tbody>
-        {foreach from=$categories_order item=foo}
-        <tr>
-                <td>{$foo['id']}</td>
-                <td>{$foo['name']}</td>
-                <td>{$foo['order']}</td>
-            {/foreach}
-        </tr>
+        {foreach from=$categories item=category}
+            <form action="/?action=adminUpdateCategory" method="POST">
+                <tr>
+
+                    <td>{$category['id']}</td>
+                    <td><input type="text" name="name" value="{$category['name']}"></td>
+                    <td><input type="number" name="order" value="{$category['order']}"></td>
+                    <input type="hidden" name="id" value="{$category['id']}">
+                    <td><input type="submit" class="btn btn-warning" value="Update"></td>
+
+                    <td><a href="/?action=adminRemoveCategory&categoryId={$category['id']}" class="btn btn-danger">Delete</a></td>
+            </form>
+            </tr>
+        {/foreach}
+
         </tbody>
     </table>
 

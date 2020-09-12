@@ -1,6 +1,15 @@
 {extends file="layout.tpl"}
 
 {block name="body"}
+
+    {if isset($smarty.get.error)}
+        <div class="alert alert-danger" role="alert">{{$smarty.get.error}}</div>
+    {/if}
+
+    {if isset($smarty.get.message)}
+        <div class="alert alert-success" role="alert">{{$smarty.get.message}}</div>
+    {/if}
+
     <table class="table">
         <thead>
         <tr>
@@ -12,29 +21,39 @@
         </tr>
         </thead>
         <tbody>
-        {foreach from=$site_name item=foo}
-        <tr>
-            <td>{$foo['id']}</td>
-            <td>{$foo['email']}</td>
-            <td>{$foo['created_at']}</td>
-            <td>{if {$foo['is_admin']===1}}
-                    admin
-                {else}
-                    user
-                {/if}
-            </td>
-            <td>
-                {if {$foo['is_admin']===1}}
-                <form action="" method="POST">
-                <button class="btn btn-success" formaction="/?action=makeUser">Make user</button>
-                <button class="btn btn-danger" formaction="/?action=deleteUser">Delete</button>
-                {else}
-                    <button class="btn btn-primary" formaction="/?action=makeAdmin">Make admin</button>
-                    <button class="btn btn-danger" formaction="/?action=deleteAdmin">Delete</button>
-                {/if}
-            </td>
-            {/foreach}
-        </tr>
+        {foreach from=$users item=user}
+            <tr>
+                <td>{$user['id']}</td>
+                <td>{$user['email']}</td>
+                <td>{$user['created_at']}</td>
+                <td>{if $user['is_admin'] == 1} admin {else} user {/if}</td>
+                <td>
+                    {if $user['id'] == $smarty.session.user.id}
+                <input type="submit" class="btn btn-info" value="Головний адміністратор">
+                </td>
+                    {elseif $user['is_admin'] == 1}
+                        <form action="/?action=adminChangeRole" method="POST">
+                            <input type="hidden" value="{$user['id']}" name="id">
+                            <input type="hidden" value="0" name="admin">
+                            <input type="submit" class="btn btn-primary" value="Make user">
+                        </form>
+                    {else}
+                        <form action="/?action=adminChangeRole" method="POST">
+                            <input type="hidden" value="{$user['id']}" name="id">
+                            <input type="hidden" value="1" name="admin">
+                            <input type="submit" class="btn btn-success" value="Make admin">
+                        </form>
+                    {/if}
+
+                    {if $user['id'] == $smarty.session.user.id}
+
+                    {else}
+                        <a href="/?action=adminRemoveUser&userid={$user['id']}" class="btn btn-danger">Delete</a></td>
+                    {/if}
+                </td>
+            </tr>
+        {/foreach}
+
         </tbody>
     </table>
 {/block}

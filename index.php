@@ -1,9 +1,12 @@
 <?php
+date_default_timezone_set('Europe/Kiev');
 
 require_once "libs/Smarty.class.php";
 require_once "functions.php";
 require_once "session.php";
 
+
+checkUserRole();
 
 $smarty = new Smarty();
 $smarty->setTemplateDir('templates');
@@ -18,6 +21,27 @@ if (strpos($action, 'admin') === 0) {
 }
 
 switch ($action) {
+    case "adminUpdateCategory":
+        adminUpdateCategoryEndpoint();
+        break;
+    case "adminAddProduct":
+        adminAddProductEndpoint();
+        break;
+    case "adminRemoveProduct":
+        adminRemoveProductEndpoint();
+        break;
+    case "adminUpdateProduct":
+        adminUpdateProductsEndpoint();
+        break;
+    case "adminChangeRole":
+        adminChangeRoleEndpoint();
+        break;
+    case "adminRemoveUser":
+        adminRemoveUser();
+        break;
+    case "adminRemoveCategory":
+        adminRemoveCategoryEndpoint();
+        break;
     case "login":
         loginEndpoint();
         break;
@@ -37,12 +61,11 @@ switch ($action) {
     case "adminOrders":
         adminOrdersEndpoint();
         break;
-    case "makeAdmin":
-        break;
-    case "makeUser":
-        break;
     case "cart":
         cartEndpoint();
+        break;
+    case "orders":
+        ordersEndpoint();
         break;
     case "logout":
         logoutEndpoint();
