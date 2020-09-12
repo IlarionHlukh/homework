@@ -20,21 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39c24520-ef82-41e5-9868-6871c6a6e709" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/products.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/categories.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/categories.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/products.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/products.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/users.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/users.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/69ea7a5cd70c3e1b1718e3df20c0f2283c06141e_0.file.index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/69ea7a5cd70c3e1b1718e3df20c0f2283c06141e_0.file.index.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/a5d63cb7418ad84353970229dffb4717f377b0f4_0.file.users.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/a5d63cb7418ad84353970229dffb4717f377b0f4_0.file.users.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/cba142530b50babcc75512b6f85c629c7aaf6650_0.file.products.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/cba142530b50babcc75512b6f85c629c7aaf6650_0.file.products.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/eeaf6bfba20d32ddcad70f9200ec61b3c23a3b99_0.file.categories.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/eeaf6bfba20d32ddcad70f9200ec61b3c23a3b99_0.file.categories.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../book.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../book.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +75,7 @@
       <workItem from="1599328119099" duration="21216000" />
       <workItem from="1599410885489" duration="46775000" />
       <workItem from="1599729214950" duration="4673000" />
-      <workItem from="1599901008032" duration="21097000" />
+      <workItem from="1599901008032" duration="21416000" />
     </task>
     <servers />
   </component>
@@ -125,6 +111,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1599228003727" />
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2" timestamp="1599923717564">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="78" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1599923717564" />
     <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599731818088">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
