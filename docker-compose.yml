@@ -25,7 +25,7 @@ services:
        container_name: my_nginx
        environment:
           WEB_DOCUMENT_ROOT: /laravel
-          WEB_DOCUMENT_INDEX: index.php
+          WEB_DOCUMENT_INDEX: room_members.php
           WEB_PHP_SOCKET: php:9000
        volumes:
           - "./:/laravel"

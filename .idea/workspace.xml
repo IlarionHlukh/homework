@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39c24520-ef82-41e5-9868-6871c6a6e709" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/49c81b88-d73a-4656-80d7-d936e5218b32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c27bc67-948c-496c-8e87-c95f0f16cf1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5c27bc67-948c-496c-8e87-c95f0f16cf1d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f1a0d483-49e5-49e2-ab4e-4ece219964e3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f29e33ac-b343-4354-9c3f-d249c7572641.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/room_members.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../book.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../book.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,15 +67,16 @@
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\XAAMP\htdocs\PHPStormProject\SQL" />
+      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework\templates" />
+      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework" />
       <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework\images" />
       <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework\src" />
       <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework\templates" />
-      <recent name="D:\XAAMP\htdocs\PHPStormProject\shop_homework" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -106,7 +104,9 @@
       <workItem from="1601136035320" duration="242000" />
       <workItem from="1601137244080" duration="169000" />
       <workItem from="1601137475107" duration="27593000" />
-      <workItem from="1601317757273" duration="47168000" />
+      <workItem from="1601317757273" duration="47496000" />
+      <workItem from="1601914469399" duration="2617000" />
+      <workItem from="1602522828002" duration="20351000" />
     </task>
     <servers />
   </component>
@@ -141,44 +141,48 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="438" y="135" key="#Web_Browsers/0.0.1280.689@0.0.1280.689" timestamp="1599226761074" />
-    <state x="221" y="7" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601234773984">
+    <state x="221" y="7" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602596713533">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="221" y="7" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1601234773984" />
+    <state x="221" y="7" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1602596713533" />
     <state x="380" y="147" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600503782586">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="380" y="147" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.689@0.0.1280.689" timestamp="1600503782586" />
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601914507322">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.689@0.0.1280.689" timestamp="1601914507322" />
     <state x="421" y="87" key="FileChooserDialogImpl" timestamp="1601207349309">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="421" y="87" key="FileChooserDialogImpl/0.0.1280.689/1920.0.1280.689@0.0.1280.689" timestamp="1600363373399" />
     <state x="421" y="87" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1601207349309" />
-    <state width="1017" height="79" key="GridCell.Tab.0.bottom" timestamp="1601380490182">
+    <state width="1017" height="82" key="GridCell.Tab.0.bottom" timestamp="1602698337269">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1017" height="79" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1601380490182" />
-    <state width="1017" height="79" key="GridCell.Tab.0.center" timestamp="1601380490182">
+    <state width="1017" height="82" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1602698337269" />
+    <state width="1017" height="82" key="GridCell.Tab.0.center" timestamp="1602698337269">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1017" height="79" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1601380490182" />
-    <state width="1017" height="79" key="GridCell.Tab.0.left" timestamp="1601380490182">
+    <state width="1017" height="82" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1602698337269" />
+    <state width="1017" height="82" key="GridCell.Tab.0.left" timestamp="1602698337269">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1017" height="79" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1601380490182" />
-    <state width="1017" height="79" key="GridCell.Tab.0.right" timestamp="1601380490182">
+    <state width="1017" height="82" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1602698337269" />
+    <state width="1017" height="82" key="GridCell.Tab.0.right" timestamp="1602698337269">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1017" height="79" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1601380490182" />
+    <state width="1017" height="82" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1602698337269" />
     <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1601232143439">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1280.689@0.0.1280.689" timestamp="1601232143439" />
-    <state x="477" y="269" key="NewPhpFileDialog" timestamp="1601375612590">
+    <state x="477" y="269" key="NewPhpFileDialog" timestamp="1602677386401">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="477" y="269" key="NewPhpFileDialog/0.0.1280.689/1920.0.1280.689@0.0.1280.689" timestamp="1600361944273" />
-    <state x="477" y="269" key="NewPhpFileDialog/0.0.1280.689@0.0.1280.689" timestamp="1601375612590" />
+    <state x="477" y="269" key="NewPhpFileDialog/0.0.1280.689@0.0.1280.689" timestamp="1602677386401" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1599228003727">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -212,10 +216,10 @@
     </state>
     <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.689/1920.0.1280.689@0.0.1280.689" timestamp="1600362407138" />
     <state x="93" y="93" width="1095" height="504" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.689@0.0.1280.689" timestamp="1601498995540" />
-    <state x="297" y="153" key="run.anything.popup" timestamp="1601383369453">
+    <state x="297" y="153" key="run.anything.popup" timestamp="1602596970191">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="297" y="153" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1601383369453" />
+    <state x="297" y="153" key="run.anything.popup/0.0.1280.689@0.0.1280.689" timestamp="1602596970191" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
