@@ -41,8 +41,5 @@ Route::get('profile', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('verified');
 
-Route::get('/image', [App\Http\Controllers\ImageController::class, 'getForm'])->name('home');
-
-Route::post('/image', [App\Http\Controllers\ImageController::class, 'upload'])->name('home');
 
 

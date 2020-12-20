@@ -1,7 +1,6 @@
 @section('title', $post->title)
 @extends('layouts.app')
 
-
 @section('content')
     @if (session('success'))
         <div class="alert alert-success">
@@ -9,8 +8,8 @@
         </div>
     @endif
     @include('partials.summary')
+    @if (Auth::check())
     <div class="container col-md">
-        @if (Auth::check())
             <form method="post" action="{{ route('posts.destroy', $post) }}">
                 @csrf
                 @method('delete')
@@ -31,8 +30,8 @@
 
                 @include('posts.commentsDisplay', ['comments' => $post->comments, 'post_id' => $post->id])
 
-                <hr />
-                <h4>Add comment</h4>
+                <hr/>
+                <h4>Додати коментар</h4>
                 <form method="post" action="{{ route('comments.store'   ) }}">
                     @csrf
                     <div class="form-group">
@@ -40,7 +39,7 @@
                         <input type="hidden" name="post_id" value="{{ $post->id }}" />
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-success" value="Add Comment" />
+                        <input type="submit" class="btn btn-success" value="Додати коментар" />
                     </div>
                 </form>
             </div>

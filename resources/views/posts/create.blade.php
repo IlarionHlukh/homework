@@ -8,8 +8,12 @@
             </div>
     @endunless
     @if (Auth::check())
-    <h1 class="title">Create a new post</h1>
-
+        <div class="container">
+            <nav class="navbar sticky-top navbar-light bg-light">
+                <a class="navbar-brand">Створити новий пост</a>
+            </nav>
+        </div>
+        </nav>
     <div class="field">
     <div class="control">
         <form method="post" action="{{ route('posts.store') }}" enctype="multipart/form-data">

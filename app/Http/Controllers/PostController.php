@@ -100,20 +100,17 @@ class PostController extends Controller
          */
         public function update(Request $request, Post $post)
         {
-            // Validate posted form data
+
             $validated = $request->validate([
                 'title' => 'required|string|unique:posts|min:5|max:100',
                 'content' => 'required|string|min:5|max:2000',
                 'category_id'
             ]);
 
-            // Create slug from title
             $validated['slug'] = Str::slug($validated['title'], '-');
 
-            // Update Post with validated data
             $post->update($validated);
 
-            // Redirect the user to the created post woth an updated notification
             return redirect(route('posts.show', $post))->with('notification', 'Post updated!');
         }
 
@@ -126,7 +123,7 @@ class PostController extends Controller
         public function destroy(Post $post)
         {
             if ($post->user_id != Auth::id()) {
-                return redirect()->back();
+                return redirect()->back()->with('message',"Тільки автор може видалити пост!");;
             }
             // Delete the specified Post
             $post->delete();
@@ -159,7 +156,7 @@ class PostController extends Controller
                     }
                 }
             }
-            // если было загружено новое изображение
+
             $source = $request->file('image');
             if ($source) {
                 $ext = str_replace('jpeg', 'jpg', $source->extension());

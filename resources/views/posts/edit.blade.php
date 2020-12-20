@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <h1 class="title">Edit: {{ $post->title }}</h1>
+    <h1 class="title">Редагування: {{ $post->title }}</h1>
 
     <form method="post" action="{{ route('posts.update', $post) }}">
 

@@ -1,5 +1,9 @@
 <div class="content">
-
+    @if (session('message'))
+        <div class="alert alert-danger">
+            {{ session('message') }}
+        </div>
+    @endif
     <a href="{{ route('posts.show', [$post->slug]) }}">
         <h1 class="title">{{ $post->title }}</h1>
     </a>

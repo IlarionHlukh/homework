@@ -23,27 +23,6 @@ class ShowUsersController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -51,7 +30,13 @@ class ShowUsersController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::query()->where('id', $id)->first();
+
+        if ($user) {
+            $user->is_admin = 0;
+            $user->save();
+        }
+        return redirect(route('users.index'))->with('success', 'Role successfully updated!');
     }
 
     /**
@@ -62,27 +47,15 @@ class ShowUsersController extends Controller
      */
     public function edit($id)
     {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, User $user, $id)
-    {
         $user = User::query()->where('id', $id)->first();
 
         if ($user) {
             $user->is_admin = 1;
             $user->save();
         }
-
-        return redirect(route('users.index'))->with('success', "$user->name" . 'role successfully updated!');
+        return redirect(route('users.index'))->with('success', 'Role successfully updated!');
     }
+
 
     /**
      * Remove the specified resource from storage.
@@ -90,11 +63,13 @@ class ShowUsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy($id)
     {
-        $user->delete();
+        User::find($id)->delete($id);
 
         // Redirect user with a deleted notification
-        return redirect(route('users.index'))->with('success', "$user->name" . 'successfully deleted!');
+        return response()->json([
+            'success' => 'User deleted successfully!'
+        ]);
     }
 }
